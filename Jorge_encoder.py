@@ -14,7 +14,7 @@ def encode(input_password):
                 num = num[-1] # if result is 2 digits, gets the last digit. ex: 9 + 3 = 2
         output += num
     print("Your password has been encoded and stored!")
-    return output
+    pass
 
 
 def decode(password):
@@ -39,7 +39,7 @@ while True:
 
     if option == 1:
         password_input = input("Please enter your password to encode:")
-        print(encode(password_input))
+        encode(password_input)
     elif option == 2:
         decode(password)
         pass
