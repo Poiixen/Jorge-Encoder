@@ -29,8 +29,8 @@ def decode(password):
         else:
             num = str(int(num) - 3)
         decoded_password += num
-    print(f"Your decoded password is {password}, and your original password is {decoded_password}")
-    pass
+    print(f"The encoded password is {password}, and the original password is {decoded_password}")
+    return decoded_password
 
 
 while True:
@@ -41,7 +41,7 @@ while True:
         password_input = input("Please enter your password to encode:")
         encode(password_input)
     elif option == 2:
-        decode(password)
+        decode(encode(password_input))
         pass
     elif option == 3:
         break
