@@ -41,7 +41,7 @@ while True:
         password_input = input("Please enter your password to encode:")
         print(encode(password_input))
     elif option == 2:
-        decode(password)
+        decode(encode(password_input))
         pass
     elif option == 3:
         break
